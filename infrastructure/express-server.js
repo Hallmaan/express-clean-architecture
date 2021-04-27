@@ -34,7 +34,8 @@ class ExpressServer {
 
     app.set('case sensitive routing', true);
 
-    app.listen(3000, () => {
+    const API_PORT = process.env.PORT || 3001
+    app.listen(API_PORT, () => {
       console.log('listening on port 3000!');
     });
   }
